@@ -14,23 +14,19 @@ This Python script is a simple web login bruteforce tool that attempts to find t
 
 2. **Run the Script:**
 
-   - Execute the `bruteforce.py` script:
+   - Execute the `bruteforce.py` script with the following command-line arguments:
 
      ```bash
-     python bruteforce.py
+     python bruteforce.py <URL> <Username> <PasswordFile> <LoginFailedString> [<CookieValue>]
      ```
 
-   - The script will prompt you to enter the page URL, the username for the account to bruteforce, the password file, and other optional parameters.
+     - **URL:** The URL of the login page.
+     - **Username:** The target username for bruteforcing.
+     - **Password File:** The file containing the list of passwords to try.
+     - **Login Failed String:** String that indicates a login failure.
+     - **Cookie Value (Optional):** Provide a cookie value if needed for the request.
 
-3. **Parameters:**
-
-   - **Page URL:** The URL of the login page.
-   - **Username:** The target username for bruteforcing.
-   - **Password File:** The file containing the list of passwords to try.
-   - **Login Failed String:** String that indicates a login failure.
-   - **Cookie Value (Optional):** Provide a cookie value if needed for the request.
-
-4. **Output:**
+3. **Output:**
 
    - The script will print the attempts and notify you if a valid username and password are found.
 
@@ -48,6 +44,3 @@ This Python script is a simple web login bruteforce tool that attempts to find t
 
 This script is for educational purposes only. Unauthorized access to systems or accounts is illegal and unethical. Use responsibly and only on systems you have explicit permission to test.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
